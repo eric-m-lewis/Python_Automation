@@ -11,7 +11,7 @@ def calcTimeDiff(target, current):
     return timeRemainString
 
 url = "https://www.twitch.tv/twitchrivals"
-targetTime = '22:00:10'
+targetTime = '15:00:10'
 
 currentTime = '00:00:00'
 while currentTime != targetTime:
