@@ -10,7 +10,7 @@ def calcTimeDiff(target, current):
     timeRemainString = timeRemainString.strftime("%H:%M:%S")
     return timeRemainString
 
-url = "https://www.twitch.tv/twitchrivals"
+urlList = ["https://www.twitch.tv/twitchrivals", "https://www.twitch.tv/stankrat_","https://www.twitch.tv/gingy"]
 targetTime = '15:00:10'
 
 currentTime = '00:00:00'
@@ -23,6 +23,6 @@ while currentTime != targetTime:
     print(printString)
     time.sleep(1)
 
-print(f"\nOpening URL: {url}")
-webbrowser.open(url)
-print(currentTime)
+for url in urlList:
+    print(f"\nOpening URL: {url}")
+    webbrowser.open(url)
